@@ -39,3 +39,4 @@ nosetests.xml
 app.db
 microblog.log*
 .flaskenv
+token.txt
