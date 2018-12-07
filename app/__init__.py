@@ -45,7 +45,7 @@ if not app.debug:
             '%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
         )
     )
-    file_handler.addHandler(file_handler)
+    app.logger.addHandler(file_handler)
     app.logger.setLevel(logging.INFO)
     app.logger.info('Microblog startup')
 
